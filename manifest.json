@@ -1,0 +1,25 @@
+{
+  "name": "Wheel of standup",
+  "description": "Copy all Google Meet participant names to your clipboard and open the Wheel of Names website.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/wheel-16.png",
+      "32": "/images/wheel-32.png",
+      "48": "/images/wheel-48.png",
+      "128": "/images/wheel-128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/wheel-16.ico",
+    "32": "/images/wheel-32.ico",
+    "48": "/images/wheel-48.ico",
+    "128": "/images/wheel-128.ico"
+  }
+}

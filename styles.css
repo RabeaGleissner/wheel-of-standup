@@ -1,0 +1,11 @@
+button {
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+.container {
+  width: 150px;
+  height: 150px;
+}
