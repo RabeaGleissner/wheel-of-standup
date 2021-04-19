@@ -3,10 +3,13 @@
   "description": "Copy all Google Meet participant names to your clipboard and open the Wheel of Names website.",
   "version": "1.0",
   "manifest_version": 3,
-  "background": {
-    "service_worker": "background.js"
-  },
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "activeTab", "scripting", "clipboardWrite"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
