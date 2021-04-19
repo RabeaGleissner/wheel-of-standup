@@ -11,6 +11,10 @@ button:hover {
 }
 
 .container {
-  width: 150px;
+  width: 130px;
   height: 150px;
+}
+
+.link-to-wheel {
+  text-align: center;
 }
