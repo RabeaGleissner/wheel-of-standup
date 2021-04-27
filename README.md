@@ -10,7 +10,9 @@ Sounds familiar? Here's a Chrome extension to solve this issue!
 
 ## How it works
 
-Click on the extension icon when you're in a Google Meet call with your team and no one volunteers to run standup.
+Click on the extension icon when you're in a Google Meet call.
+
+Make sure you have the sidebar with all participants open (click that icon with the little people!).
 
 Copy the names of all participants on the call to your clipboard, then open the [Wheel of Names](https://wheelofnames.com/) with the handy link provided and paste the names. Lastly: spin the wheel!
 
