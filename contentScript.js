@@ -5,7 +5,7 @@ const copyParticipantNames = () => {
     const participantNames = Array.prototype.map.call(participants, participant => participant.textContent);
     const ownName = participantNames.shift();
     const ownNameWithoutAdditionalInfo = ownName.split('(')[0];
-    const participantNamesWithoutPresentation = participantNames.filter(name => !name.includes('Your presentationkeep_off'));
+    const participantNamesWithoutPresentation = participantNames.filter(name => !name.toLowerCase().includes('presentation'));
     const participantsWithLineBreaks = Array.prototype.join.call([...participantNamesWithoutPresentation, ownNameWithoutAdditionalInfo], ('\n'))
     return participantsWithLineBreaks;
   }
