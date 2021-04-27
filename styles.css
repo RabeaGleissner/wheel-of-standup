@@ -1,20 +1,32 @@
+body {
+  font-size: 16px;
+  text-align: center;
+}
+
+.container {
+  width: 180px;
+  height: 190px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
 button {
   outline: none;
   margin: 10px;
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  font-size: inherit;
+  background-color: lightblue;
+  padding: 6px 0;
 }
 
 button:hover {
-  color: blue;
+  color: slateblue;
 }
 
-.container {
-  width: 130px;
-  height: 150px;
-}
-
-.link-to-wheel {
-  text-align: center;
+.message {
+  height: 30px;
 }
