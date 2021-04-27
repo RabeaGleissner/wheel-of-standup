@@ -6,7 +6,7 @@ const copyParticipantNames = () => {
     const ownName = participantNames.shift();
     const ownNameWithoutAdditionalInfo = ownName.split('(')[0];
     const participantNamesWithoutPresentation = participantNames.filter(name => !name.toLowerCase().includes('presentation'));
-    const participantsWithLineBreaks = Array.prototype.join.call([...participantNamesWithoutPresentation, ownNameWithoutAdditionalInfo], ('\n'))
+    const participantsWithLineBreaks = [...participantNamesWithoutPresentation, ownNameWithoutAdditionalInfo].join('\n');
     return participantsWithLineBreaks;
   }
 }
