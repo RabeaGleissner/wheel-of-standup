@@ -1,7 +1,7 @@
 {
   "name": "Wheel of standup",
   "description": "Copy all Google Meet participant names to your clipboard and open the Wheel of Names website.",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 3,
   "permissions": ["activeTab", "scripting"],
   "content_scripts": [

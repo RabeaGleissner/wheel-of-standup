@@ -1,3 +1,16 @@
+// Fisher-Yates shuffle algorithm copied from https://stackoverflow.com/a/6274381
+
+const shuffle = (a) => {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
 const copyParticipantNames = () => {
   const participantsElement = document.querySelector('[aria-label="Participants"]');
   if (participantsElement) {
@@ -6,7 +19,8 @@ const copyParticipantNames = () => {
     const ownName = participantNames.shift();
     const ownNameWithoutAdditionalInfo = ownName.split('(')[0];
     const participantNamesWithoutPresentation = participantNames.filter(name => !name.toLowerCase().includes('presentation'));
-    const participantsWithLineBreaks = [...participantNamesWithoutPresentation, ownNameWithoutAdditionalInfo].join('\n');
+    const randomisedParticipants = shuffle(participantNamesWithoutPresentation);
+    const participantsWithLineBreaks = [...randomisedParticipants, ownNameWithoutAdditionalInfo].join('\n');
     return participantsWithLineBreaks;
   }
 }
